@@ -1,0 +1,54 @@
+1. Inicio
+2. funcion principal()
+3. 	decision, i[0,n]
+4.	<< "Ingrese la operacion a realizar:\n 1 Para area de cuadrado. \n 2 Para area de triangulo. \n 3 Para area del rectangul. "
+5. 	>>desicion
+6. 	Dependiendo_De (desicion) haga
+7.		opcion 1
+8. 			obtenerAreaCuadrado()
+9.		Fin
+10.		Opcion 2
+11.			optenerAreaTriangulo()
+12.		Fin
+13.		Opcion 3 
+14.			optenerAreaRectangulo()
+15.		Fin				
+16.		Opcion n
+17.			<< "Fuera de rango "
+18. 		Fin
+19. 	Fin Dependiendo_De
+20. fin funcion principal
+21. 
+22. funcion obtenerAreaCuadrado()
+23. 	lado, d[0,n]
+24.	area, d[0,n]
+25.	<< "Ingrese el valor del lado del cuadrado: "
+26.	>>lado
+27. 	area <-- lado * lado
+28.	<< "El resultado es: " + area
+29. fin funcion obtenerAreaCuadrado() 
+30.
+31. funcion obtenerAreaTriangulo()
+32.	base, d[0,n]
+33.	altura, d[0,n]
+34.	area, d[0,n]
+35.	<< "Ingrese el valor de la base del triangulo: "
+36.	>>base
+37.	<< "Ingrese el valor de la altura del triangulo: "
+38.	>>altura
+39.	area <-- (base * altura)/2
+40.	<< "El resultado es: +" area
+41. fin funcion obtenerAreaTriangulo()
+42.
+43. funcion obtenerAreaRectangulo()
+44.	base, d[0,n]
+45.	altura, d[0,n]
+46.	area, d[0,n]
+47.	<< "Ingrese el valor de la base del rectangulo: "
+48.	>>base
+49.	<< "Ingrese el valor de la altura del rectangulo: "
+50.	>>altura
+51.	area <-- base * altura
+52.	<< "El resultado es: " + area
+53. fin funcion obtenerAreaRectangulo()
+54. Fin

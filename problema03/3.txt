@@ -1,0 +1,45 @@
+1. Inicio
+2. fucion principal ()
+3. 	nombre, x(50)[{a-z};{A-Z};{BS}]
+4.	cedula, x(50)[{-};{0,9}]
+5.	proceso, i[0,n]
+6.	<< "Ingrese su nombre: "
+7.	>>nombre
+8.	<< " Ingrese su numero de cedula: "
+9.	>>cedula
+10.	<< " Ingrese el proceso que deseea hacer:\n(1) para calcular el valor de la planilla de luz\n(2) para calcular el valor de predio: "
+11.	>>proceso
+12.	Dependiendo_De (proceso) haga
+13.		opcion 1
+14.			calcularValorLuz(nombre, cedula)
+15.		fin
+16.		opcion 2
+17.			calcularPredio(nombre, cedula)
+18.		fin
+19.		opcion n
+20.			<< "Fuer de rango"
+21.		fin
+22.	Fin Dependiendo_De 
+23.	Fin funcion principal ()
+24.
+25. funcion calcularValorLuz (nom, x; ced, x)
+26.	ValorKilowatio, d[0,n]
+27.	Kilowatio, d[0,n]
+28.	total, d[0,n]
+29.	<< "Ingrese el valor del kilowatio: "
+30.	>>ValorKilowatio
+31.	<< "Ingrese la cantidad de kilowatios consumidos por mes: "
+32.	>>Kilowatio
+33.	total <-- ValorKilowatio * Kilowatio
+34.	<< "Cliente " + nom + "con cedula " + ced + " debe cacelar el valor de $" + totañ
+35. fin funcion calcularValorLuz
+36.
+37. funcion calcularPredio(nom, x; ced, x)
+38. 	valorInmueble, d[0,n]
+39.	total, d[0,n]
+40.	<< "Ingrese el valor del inmueble: "
+41.	>>valorInmueble
+42.	total <-- valorInmueble * 0.02
+43.	<< ""Cliente " + nom + "con cedula " + ced + "tiene que pagar un predio $" + total"
+44. fin funcion calcularPredio
+45. Fin			

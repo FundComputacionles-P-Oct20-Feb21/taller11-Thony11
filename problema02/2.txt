@@ -1,0 +1,44 @@
+1. Inicio
+2. funcion principal ()
+3.	nota1, d[0,n]
+4.	nota2, d[0,n]
+5.	nota3, d[0,n]
+6.	nota4, d[0,n]
+7.	cualitativo, x(50)[{a-z};{A-Z};{BS}]
+8.	<< "Ingrese el valor de nota 1: "
+9.	>>nota1
+10.	<< "Ingrese el valor de nota 2: "
+11.	>>nota2
+12.	<< "Ingrese el valor de nota 3: "
+13.	>>nota3
+14.	<< "Ingrese el valor de nota 4: "
+15.	>>nota4
+16.	cualitativo <-- promedio (nota1: nota2: nota3: nota4)
+17.	<< "El promedio de las notas: " + nota1 +", "+ nota2 +", "+ nota3 +", "+ nota4
+18. fin funcion principal ()
+19.
+20. funcion promedioCualitativo (n1, d; n2, d; n3, d; n4, d;): d
+21.	promedio, d[0,n]
+22.	cualitativo, x(50)[{a-z};{A-Z};{BS}]
+23.	promedio <-- (n1 + n2 + n3 + n4)/4
+24.	Si (promedio >= 0) and (promedio <=5) entonces
+25.		cualitativo <-- "Regular"
+26.	De lo contrario
+27.		Si (promedio >= 5.1) and (promedio <=8) entonces
+28.		cualitativo <-- "Bueno"
+29.		De lo contrario
+30.			Si (promedio >= 8.1) and (promedio <=9) entonces
+31.			cualitativo <-- "Muy bueno"
+32.			De lo contrario
+33.  				Si (promedio >= 0) and (promedio <=5) entonces
+34.					cualitativo <-- "Sobresaliente"
+35.				Fin si
+36.			Fin si
+37.		Fin si
+38.	Fin si
+39.	return cualitativo
+40. fin funcion promedioCualitativo
+41. Fin
+	
+	
+ 			
